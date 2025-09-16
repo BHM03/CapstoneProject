@@ -1,0 +1,34 @@
+defaults:
+  currency: "USD"
+  expense_negative: true
+
+banks:
+  chase:
+    match_in_filename: "chase"
+    columns:
+      date: "Posting Date"
+      description: "Description"
+      amount: "Amount"
+      pending: null
+      id: null
+    date_format: "%m/%d/%Y"
+
+  amex:
+    match_in_filename: "amex"
+    columns:
+      date: "Date"
+      description: "Description"
+      amount: "Amount"
+      pending: "Pending"
+      id: "Transaction ID"
+    date_format: "%m/%d/%Y"
+
+  boa:
+    match_in_filename: "bankofamerica"
+    columns:
+      date: "Posted Date"
+      description: "Payee"
+      amount: "Amount"
+      pending: null
+      id: "Transaction ID"
+    date_format: "%m/%d/%Y"
