@@ -1,5 +1,7 @@
 Hey, welcome to my project!
 
+My project is a web app that takes in your transaction csv file, categorizes your spending, and forecasts your finances
+
 This is my current working version of my project that only has the ETL pipeline completed, so you'll only need to run the following command:
   (make sure you are in my etl directory first)
   python3 ingest.py artificial_transactions_100.csv
