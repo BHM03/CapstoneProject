@@ -1,0 +1,501 @@
+date,account_id,merchant_raw,amount,category
+2024-01-01,checking,PIZZA HUT,-23.5,food
+2024-01-02,checking,NIKE FACTORY STORE,-216.73,shopping
+2024-01-04,savings,ARCO,-70.63,transportation
+2024-01-04,checking,METRO TRANSIT,-61.79,transportation
+2024-01-05,savings,IN-N-OUT,-39.54,food
+2024-01-06,savings,UBER EATS,-44.92,food
+2024-01-07,checking,AT&T INTERNET,-122.23,utilities
+2024-01-08,checking,TRADER JOE'S,-56.02,food
+2024-01-08,savings,YOUTUBE PREMIUM,-7.81,subscriptions
+2024-01-09,credit_card,GYM MEMBERSHIP,-199.24,health
+2024-01-11,checking,CITY WATER & SEWER,-55.24,utilities
+2024-01-11,savings,LYFT,-20.37,transportation
+2024-01-12,savings,UNI QLO,-79.5,shopping
+2024-01-13,savings,RENT PAYMENT,-1798.3936022781852,rent
+2024-01-13,savings,LOWE'S,-222.8,shopping
+2024-01-14,credit_card,VENMO INCOMING,824.76,income
+2024-01-15,savings,DIRECT DEPOSIT PAYROLL,637.14,income
+2024-01-16,credit_card,AMAZON MARKETPLACE,-249.67,shopping
+2024-01-17,credit_card,APPLE STORE,-66.06,shopping
+2024-01-17,credit_card,CHECK DEPOSIT,-22.65,other
+2024-01-18,checking,LOWE'S,-100.74,shopping
+2024-01-19,credit_card,SPOTIFY,-15.92,subscriptions
+2024-01-20,checking,NIKE FACTORY STORE,-249.04,shopping
+2024-01-20,savings,RENT PAYMENT,-1893.4563758564645,rent
+2024-01-21,checking,PG&E,-134.96,utilities
+2024-01-21,savings,MIDJOURNEY SUBSCRIPTION,-7.93,subscriptions
+2024-01-22,checking,BART CLIPPER,-9.35,transportation
+2024-01-22,savings,ESCAPE ROOM,-137.27,entertainment
+2024-01-22,savings,T-MOBILE,-93.27,utilities
+2024-01-23,credit_card,OPTOMETRY CENTER,-222.59,health
+2024-01-23,savings,HOME DEPOT,-85.88,shopping
+2024-01-23,credit_card,APPLE ICLOUD,-19.94,subscriptions
+2024-01-23,credit_card,24 HOUR FITNESS,-245.45,health
+2024-01-24,savings,EXXONMOBIL,-36.46,transportation
+2024-01-27,credit_card,UBER,-51.23,transportation
+2024-01-28,savings,UBER EATS,-41.29,food
+2024-01-28,checking,24 HOUR FITNESS,-130.48,health
+2024-01-28,credit_card,SPOTIFY,-8.61,subscriptions
+2024-01-29,checking,SHELL GAS,-22.72,transportation
+2024-01-29,credit_card,CONCERT TICKETS,-81.03,entertainment
+2024-02-01,credit_card,COMCAST INTERNET,-123.29,utilities
+2024-02-02,checking,PLANET FITNESS,-18.88,health
+2024-02-03,savings,WALMART SUPERSTORE,-79.63,shopping
+2024-02-04,credit_card,WALGREENS PHARMACY,-103.71,health
+2024-02-05,credit_card,PROPERTY MANAGEMENT CO,-1814.1481738607627,rent
+2024-02-06,savings,NETFLIX,-8.58,subscriptions
+2024-02-06,savings,PIZZA HUT,-40.29,food
+2024-02-07,checking,TARGET,-90.7,shopping
+2024-02-07,savings,COSTCO WHOLESALE,-237.13,shopping
+2024-02-07,credit_card,FREELANCE PAYMENT,1260.58,income
+2024-02-07,savings,PROPERTY MANAGEMENT CO,-1888.613690905098,rent
+2024-02-08,savings,SPOTIFY,-4.81,subscriptions
+2024-02-08,credit_card,APARTMENT RENT,-1754.5590289205522,rent
+2024-02-08,savings,ARCO,-76.49,transportation
+2024-02-08,checking,WALMART SUPERSTORE,-192.23,shopping
+2024-02-09,credit_card,SMUD UTILITIES,-68.57,utilities
+2024-02-09,checking,PLAYSTATION STORE,-128.22,entertainment
+2024-02-09,checking,CHEVRON,-46.2,transportation
+2024-02-10,savings,DOMINO'S PIZZA,-21.83,food
+2024-02-10,savings,BART CLIPPER,-70.68,transportation
+2024-02-10,checking,TRADER JOE'S,-45.52,food
+2024-02-11,savings,CHIPOTLE,-41.5,food
+2024-02-13,credit_card,COMCAST INTERNET,-112.01,utilities
+2024-02-13,credit_card,SPOTIFY,-5.11,subscriptions
+2024-02-13,savings,PLAYSTATION STORE,-88.25,entertainment
+2024-02-14,checking,T-MOBILE,-128.16,utilities
+2024-02-16,credit_card,NIKE FACTORY STORE,-91.78,shopping
+2024-02-16,savings,SPOTIFY,-20.66,subscriptions
+2024-02-17,savings,T-MOBILE,-62.16,utilities
+2024-02-17,savings,BART CLIPPER,-14.95,transportation
+2024-02-19,checking,BEST BUY,-223.51,shopping
+2024-02-20,credit_card,SAFEWAY,-27.74,food
+2024-02-20,savings,TARGET,-119.26,shopping
+2024-02-20,credit_card,MIDJOURNEY SUBSCRIPTION,-8.24,subscriptions
+2024-02-20,savings,SAFEWAY,-41.22,food
+2024-02-21,savings,TRADER JOE'S,-35.03,food
+2024-02-21,credit_card,MIDJOURNEY SUBSCRIPTION,-12.19,subscriptions
+2024-02-22,checking,CVS PHARMACY,-78.42,health
+2024-02-22,checking,CONCERT TICKETS,-147.53,entertainment
+2024-02-23,credit_card,EXXONMOBIL,-19.14,transportation
+2024-02-24,credit_card,BEST BUY,-104.62,shopping
+2024-02-24,savings,TACO BELL,-39.77,food
+2024-02-25,checking,PROPERTY MANAGEMENT CO,-1685.8593251337782,rent
+2024-02-25,savings,COSTCO FOOD COURT,-16.35,food
+2024-02-26,savings,WALMART GROCERY,-39.88,food
+2024-02-26,credit_card,AMAZON MARKETPLACE,-45.97,shopping
+2024-02-27,credit_card,MCDONALD'S,-53.45,food
+2024-02-28,checking,COMCAST INTERNET,-136.47,utilities
+2024-02-28,credit_card,LYFT,-38.95,transportation
+2024-02-28,checking,DISNEY+,-5.29,subscriptions
+2024-03-03,checking,COSTCO WHOLESALE,-36.54,shopping
+2024-03-05,savings,VENMO PAYMENT,-32.14,other
+2024-03-06,credit_card,CITY WATER & SEWER,-93.41,utilities
+2024-03-07,checking,HOME DEPOT,-73.9,shopping
+2024-03-07,checking,BART CLIPPER,-46.35,transportation
+2024-03-07,credit_card,CASH DEPOSIT,416.44,income
+2024-03-08,checking,BOWLING ALLEY,-31.6,entertainment
+2024-03-11,savings,COMCAST INTERNET,-63.13,utilities
+2024-03-11,checking,UBER,-28.84,transportation
+2024-03-16,checking,APARTMENT RENT,-1689.2659826211366,rent
+2024-03-16,credit_card,EXXONMOBIL,-15.4,transportation
+2024-03-19,credit_card,SMUD UTILITIES,-61.4,utilities
+2024-03-20,credit_card,UNI QLO,-168.91,shopping
+2024-03-20,credit_card,NETFLIX,-13.55,subscriptions
+2024-03-21,credit_card,SHELL GAS,-56.53,transportation
+2024-03-21,credit_card,LYFT,-30.44,transportation
+2024-03-22,credit_card,CONCERT TICKETS,-62.2,entertainment
+2024-03-23,savings,DOMINO'S PIZZA,-57.49,food
+2024-03-23,credit_card,APPLE ICLOUD,-13.38,subscriptions
+2024-03-24,savings,RENT PAYMENT,-1802.4786361898189,rent
+2024-03-24,savings,MCDONALD'S,-25.18,food
+2024-03-25,credit_card,NIKE FACTORY STORE,-229.8,shopping
+2024-03-26,savings,CITY WATER & SEWER,-100.72,utilities
+2024-03-26,checking,CHIPOTLE,-32.22,food
+2024-03-27,savings,APARTMENT RENT,-1628.3786404993027,rent
+2024-03-29,savings,VENMO INCOMING,1949.32,income
+2024-03-30,savings,BEST BUY,-46.06,shopping
+2024-04-02,savings,WALMART SUPERSTORE,-56.14,shopping
+2024-04-02,credit_card,NINTENDO ESHOP,-57.84,entertainment
+2024-04-03,credit_card,AT&T INTERNET,-61.21,utilities
+2024-04-03,credit_card,PG&E,-66.02,utilities
+2024-04-05,credit_card,CVS PHARMACY,-135.64,health
+2024-04-07,checking,URGENT CARE,-95.67,health
+2024-04-07,checking,STARBUCKS,-17.76,food
+2024-04-08,savings,T-MOBILE,-51.96,utilities
+2024-04-08,checking,NINTENDO ESHOP,-150.0,entertainment
+2024-04-09,checking,APARTMENT RENT,-1849.4377169010436,rent
+2024-04-09,savings,CONCERT TICKETS,-104.96,entertainment
+2024-04-11,savings,PG&E,-99.21,utilities
+2024-04-11,savings,ARCO,-51.37,transportation
+2024-04-12,credit_card,DIRECT DEPOSIT PAYROLL,913.21,income
+2024-04-12,checking,PROPERTY MANAGEMENT CO,-1780.5190867338601,rent
+2024-04-14,credit_card,APPLE ICLOUD,-14.25,subscriptions
+2024-04-15,savings,TARGET,-210.01,shopping
+2024-04-16,checking,LOWE'S,-65.75,shopping
+2024-04-17,savings,DOORDASH,-24.52,food
+2024-04-18,credit_card,AT&T INTERNET,-72.68,utilities
+2024-04-20,checking,PANDA EXPRESS,-24.18,food
+2024-04-20,credit_card,BART CLIPPER,-38.23,transportation
+2024-04-21,checking,COSTCO FOOD COURT,-33.29,food
+2024-04-22,credit_card,AT&T INTERNET,-61.94,utilities
+2024-04-24,credit_card,RENT PAYMENT,-1739.8465978564784,rent
+2024-04-24,savings,CHEVRON,-33.21,transportation
+2024-04-25,checking,YOUTUBE PREMIUM,-8.81,subscriptions
+2024-04-25,savings,BART CLIPPER,-68.85,transportation
+2024-04-26,savings,APPLE ICLOUD,-7.59,subscriptions
+2024-04-27,credit_card,TACO BELL,-7.73,food
+2024-04-29,credit_card,NINTENDO ESHOP,-53.33,entertainment
+2024-04-30,savings,APPLE STORE,-38.35,shopping
+2024-05-01,checking,URGENT CARE,-39.24,health
+2024-05-01,savings,ZELLE INCOMING,1706.57,income
+2024-05-01,checking,LOWE'S,-91.09,shopping
+2024-05-02,savings,SAFEWAY,-19.01,food
+2024-05-03,checking,DENTAL CLINIC,-79.91,health
+2024-05-03,savings,CVS PHARMACY,-195.16,health
+2024-05-04,credit_card,T-MOBILE,-106.4,utilities
+2024-05-04,credit_card,PG&E,-109.72,utilities
+2024-05-04,savings,BART CLIPPER,-50.4,transportation
+2024-05-05,credit_card,MCDONALD'S,-21.39,food
+2024-05-05,checking,COSTCO FOOD COURT,-13.54,food
+2024-05-05,savings,HOME DEPOT,-111.83,shopping
+2024-05-05,credit_card,ZELLE INCOMING,3271.25,income
+2024-05-05,credit_card,WALMART GROCERY,-30.96,food
+2024-05-06,credit_card,DOORDASH,-36.31,food
+2024-05-06,savings,PIZZA HUT,-38.1,food
+2024-05-08,savings,TACO BELL,-8.74,food
+2024-05-09,checking,MIDJOURNEY SUBSCRIPTION,-12.22,subscriptions
+2024-05-10,checking,COSTCO WHOLESALE,-75.0,shopping
+2024-05-11,savings,OPTOMETRY CENTER,-210.39,health
+2024-05-13,credit_card,RENT PAYMENT,-1946.2534315761554,rent
+2024-05-14,savings,DOMINO'S PIZZA,-47.15,food
+2024-05-15,checking,WALMART GROCERY,-56.4,food
+2024-05-15,credit_card,AMAZON MARKETPLACE,-44.79,shopping
+2024-05-15,credit_card,VENMO INCOMING,891.74,income
+2024-05-15,credit_card,HOME DEPOT,-44.04,shopping
+2024-05-15,savings,TRADER JOE'S,-54.04,food
+2024-05-16,savings,DOORDASH,-56.58,food
+2024-05-18,checking,T-MOBILE,-65.14,utilities
+2024-05-19,checking,PLANET FITNESS,-227.27,health
+2024-05-21,checking,CITY WATER & SEWER,-41.02,utilities
+2024-05-22,checking,PANDA EXPRESS,-52.94,food
+2024-05-22,checking,AT&T INTERNET,-65.23,utilities
+2024-05-24,savings,YOUTUBE PREMIUM,-10.66,subscriptions
+2024-05-25,savings,ZELLE INCOMING,462.65,income
+2024-05-26,checking,REGAL CINEMAS,-100.25,entertainment
+2024-05-26,savings,CHIPOTLE,-43.62,food
+2024-05-27,credit_card,BEST BUY,-190.49,shopping
+2024-05-28,checking,TRADER JOE'S,-52.19,food
+2024-05-30,checking,APPLE STORE,-103.09,shopping
+2024-05-31,credit_card,APPLE STORE,-203.99,shopping
+2024-06-01,credit_card,AT&T INTERNET,-125.34,utilities
+2024-06-02,checking,UBER EATS,-11.59,food
+2024-06-02,checking,AMAZON MARKETPLACE,-25.81,shopping
+2024-06-02,credit_card,UNI QLO,-177.22,shopping
+2024-06-02,credit_card,APARTMENT RENT,-1816.689290410573,rent
+2024-06-03,credit_card,BEST BUY,-249.85,shopping
+2024-06-04,savings,YOUTUBE PREMIUM,-13.88,subscriptions
+2024-06-04,savings,PROPERTY MANAGEMENT CO,-1742.9888149989833,rent
+2024-06-06,checking,PROPERTY MANAGEMENT CO,-1689.8924636526474,rent
+2024-06-07,savings,24 HOUR FITNESS,-247.39,health
+2024-06-09,checking,CASH APP,-37.05,other
+2024-06-09,credit_card,SAFEWAY,-8.71,food
+2024-06-09,savings,BART CLIPPER,-49.28,transportation
+2024-06-09,checking,PROPERTY MANAGEMENT CO,-1948.423584931659,rent
+2024-06-10,credit_card,STEAM PURCHASE,-71.57,entertainment
+2024-06-10,credit_card,APPLE ICLOUD,-9.22,subscriptions
+2024-06-10,credit_card,COSTCO FOOD COURT,-41.39,food
+2024-06-12,savings,CVS PHARMACY,-211.4,health
+2024-06-12,savings,VENMO INCOMING,1277.39,income
+2024-06-15,checking,TACO BELL,-47.49,food
+2024-06-16,checking,LOWE'S,-67.02,shopping
+2024-06-16,credit_card,CASH APP,-39.0,other
+2024-06-17,savings,STEAM PURCHASE,-103.82,entertainment
+2024-06-17,savings,WALMART SUPERSTORE,-200.33,shopping
+2024-06-17,credit_card,HOME DEPOT,-104.3,shopping
+2024-06-18,credit_card,TRADER JOE'S,-33.76,food
+2024-06-19,savings,PROPERTY MANAGEMENT CO,-1726.680570959447,rent
+2024-06-19,credit_card,RENT PAYMENT,-1766.1581976273885,rent
+2024-06-19,savings,DENTAL CLINIC,-20.64,health
+2024-06-19,savings,BEST BUY,-247.37,shopping
+2024-06-20,checking,T-MOBILE,-129.3,utilities
+2024-06-20,savings,REGAL CINEMAS,-56.16,entertainment
+2024-06-20,credit_card,DENTAL CLINIC,-43.02,health
+2024-06-21,credit_card,PG&E,-89.43,utilities
+2024-06-22,credit_card,PAYPAL *EBAY,-62.06,other
+2024-06-22,checking,HULU,-19.78,subscriptions
+2024-06-22,checking,EXXONMOBIL,-31.98,transportation
+2024-06-22,savings,DENTAL CLINIC,-209.29,health
+2024-06-22,checking,SAFEWAY,-37.77,food
+2024-06-23,savings,T-MOBILE,-128.03,utilities
+2024-06-23,checking,TRADER JOE'S,-21.85,food
+2024-06-25,credit_card,APPLE ICLOUD,-15.52,subscriptions
+2024-06-27,checking,DISNEY+,-9.63,subscriptions
+2024-06-27,savings,LYFT,-60.37,transportation
+2024-06-28,savings,COMCAST INTERNET,-105.01,utilities
+2024-06-29,credit_card,CHECK DEPOSIT,-119.79,other
+2024-06-30,savings,BART CLIPPER,-70.5,transportation
+2024-07-02,checking,AMAZON MARKETPLACE,-108.56,shopping
+2024-07-04,checking,COSTCO FOOD COURT,-59.86,food
+2024-07-06,credit_card,HOME DEPOT,-132.92,shopping
+2024-07-06,savings,ZELLE PAYMENT,-49.03,other
+2024-07-06,checking,TARGET,-200.81,shopping
+2024-07-07,savings,CHEVRON,-62.91,transportation
+2024-07-07,savings,HOME DEPOT,-226.9,shopping
+2024-07-07,checking,CHECK DEPOSIT,-35.67,other
+2024-07-08,credit_card,PG&E,-90.6,utilities
+2024-07-08,checking,ZELLE PAYMENT,-56.05,other
+2024-07-09,credit_card,TARGET,-173.59,shopping
+2024-07-09,savings,ARCO,-48.06,transportation
+2024-07-13,credit_card,AT&T INTERNET,-40.59,utilities
+2024-07-13,credit_card,TRADER JOE'S,-25.38,food
+2024-07-13,credit_card,STARBUCKS,-30.48,food
+2024-07-13,savings,DISNEY+,-12.58,subscriptions
+2024-07-14,credit_card,LOWE'S,-175.54,shopping
+2024-07-16,credit_card,YOUTUBE PREMIUM,-20.95,subscriptions
+2024-07-16,savings,APARTMENT RENT,-1725.4722506138583,rent
+2024-07-16,checking,CVS PHARMACY,-99.98,health
+2024-07-17,savings,COSTCO WHOLESALE,-102.19,shopping
+2024-07-17,savings,BOWLING ALLEY,-118.43,entertainment
+2024-07-18,credit_card,STARBUCKS,-56.03,food
+2024-07-21,credit_card,WALMART GROCERY,-42.27,food
+2024-07-24,savings,STARBUCKS,-9.57,food
+2024-07-24,checking,SAFEWAY,-14.89,food
+2024-07-24,savings,DISNEY+,-5.14,subscriptions
+2024-07-25,savings,TRADER JOE'S,-56.85,food
+2024-07-25,checking,APARTMENT RENT,-1805.4412477666795,rent
+2024-07-26,savings,ZELLE PAYMENT,-64.0,other
+2024-07-27,checking,APARTMENT RENT,-1792.5763822569556,rent
+2024-07-27,credit_card,T-MOBILE,-94.26,utilities
+2024-07-27,savings,COSTCO FOOD COURT,-11.09,food
+2024-07-29,checking,CONCERT TICKETS,-104.69,entertainment
+2024-07-30,credit_card,LYFT,-67.57,transportation
+2024-07-31,credit_card,CHEVRON,-30.5,transportation
+2024-07-31,checking,APPLE ICLOUD,-14.52,subscriptions
+2024-07-31,checking,MIDJOURNEY SUBSCRIPTION,-13.95,subscriptions
+2024-07-31,savings,UBER,-23.52,transportation
+2024-08-02,credit_card,PLANET FITNESS,-25.07,health
+2024-08-03,checking,APARTMENT RENT,-1867.7317945272732,rent
+2024-08-04,checking,TACO BELL,-20.94,food
+2024-08-04,credit_card,PIZZA HUT,-9.43,food
+2024-08-05,savings,RENT PAYMENT,-1780.4109856173143,rent
+2024-08-05,checking,VENMO PAYMENT,-54.52,other
+2024-08-06,credit_card,TARGET,-130.21,shopping
+2024-08-07,savings,APPLE ICLOUD,-15.23,subscriptions
+2024-08-08,checking,CHEVRON,-65.1,transportation
+2024-08-08,credit_card,MCDONALD'S,-28.87,food
+2024-08-09,checking,CASH DEPOSIT,3113.85,income
+2024-08-09,checking,YOUTUBE PREMIUM,-10.2,subscriptions
+2024-08-09,credit_card,T-MOBILE,-103.56,utilities
+2024-08-11,checking,CVS PHARMACY,-237.14,health
+2024-08-11,credit_card,BANK FEE,-90.48,other
+2024-08-11,savings,RENT PAYMENT,-1942.5575165499083,rent
+2024-08-12,savings,ESCAPE ROOM,-83.37,entertainment
+2024-08-12,savings,YOUTUBE PREMIUM,-12.23,subscriptions
+2024-08-13,credit_card,ESCAPE ROOM,-117.72,entertainment
+2024-08-14,credit_card,APPLE ICLOUD,-8.98,subscriptions
+2024-08-14,savings,PANDA EXPRESS,-52.51,food
+2024-08-14,savings,PLAYSTATION STORE,-121.49,entertainment
+2024-08-14,credit_card,BART CLIPPER,-42.97,transportation
+2024-08-15,credit_card,PLAYSTATION STORE,-115.33,entertainment
+2024-08-15,savings,ZELLE PAYMENT,-56.42,other
+2024-08-16,credit_card,FREELANCE PAYMENT,2171.39,income
+2024-08-17,credit_card,WALMART GROCERY,-28.78,food
+2024-08-17,checking,APPLE STORE,-135.61,shopping
+2024-08-17,checking,WALGREENS PHARMACY,-227.41,health
+2024-08-17,savings,CONCERT TICKETS,-130.99,entertainment
+2024-08-18,credit_card,GYM MEMBERSHIP,-233.31,health
+2024-08-19,savings,HOME DEPOT,-67.06,shopping
+2024-08-19,checking,TRADER JOE'S,-19.39,food
+2024-08-20,credit_card,DIRECT DEPOSIT PAYROLL,2514.98,income
+2024-08-20,savings,SAFEWAY,-57.51,food
+2024-08-21,savings,HULU,-7.76,subscriptions
+2024-08-21,savings,RENT PAYMENT,-1866.7577732586353,rent
+2024-08-21,checking,APPLE ICLOUD,-8.95,subscriptions
+2024-08-22,checking,MCDONALD'S,-56.17,food
+2024-08-23,checking,LYFT,-14.35,transportation
+2024-08-23,credit_card,DOMINO'S PIZZA,-12.74,food
+2024-08-24,credit_card,DISNEY+,-4.37,subscriptions
+2024-08-24,credit_card,ESCAPE ROOM,-15.27,entertainment
+2024-08-24,checking,COSTCO FOOD COURT,-53.22,food
+2024-08-25,credit_card,CITY WATER & SEWER,-101.03,utilities
+2024-08-25,checking,PLANET FITNESS,-161.62,health
+2024-08-26,credit_card,SMUD UTILITIES,-65.62,utilities
+2024-08-26,savings,VENMO INCOMING,2186.13,income
+2024-08-26,checking,NIKE FACTORY STORE,-174.24,shopping
+2024-08-28,checking,PG&E,-114.9,utilities
+2024-08-29,credit_card,DENTAL CLINIC,-192.12,health
+2024-08-30,credit_card,CITY WATER & SEWER,-93.09,utilities
+2024-08-30,savings,URGENT CARE,-18.79,health
+2024-08-30,checking,SMUD UTILITIES,-51.44,utilities
+2024-08-31,savings,DOMINO'S PIZZA,-14.92,food
+2024-08-31,checking,AT&T INTERNET,-65.92,utilities
+2024-09-02,checking,DISNEY+,-9.36,subscriptions
+2024-09-02,savings,CASH DEPOSIT,1892.29,income
+2024-09-04,savings,AT&T INTERNET,-83.56,utilities
+2024-09-04,savings,T-MOBILE,-112.46,utilities
+2024-09-05,credit_card,SMUD UTILITIES,-63.92,utilities
+2024-09-05,savings,PG&E,-78.89,utilities
+2024-09-08,credit_card,NETFLIX,-5.14,subscriptions
+2024-09-09,savings,ESCAPE ROOM,-115.62,entertainment
+2024-09-11,checking,NIKE FACTORY STORE,-197.3,shopping
+2024-09-12,credit_card,YOUTUBE PREMIUM,-10.01,subscriptions
+2024-09-13,savings,LYFT,-13.19,transportation
+2024-09-13,credit_card,STEAM PURCHASE,-144.08,entertainment
+2024-09-14,checking,TACO BELL,-34.68,food
+2024-09-14,checking,BOWLING ALLEY,-145.28,entertainment
+2024-09-15,savings,STEAM PURCHASE,-15.48,entertainment
+2024-09-15,checking,PROPERTY MANAGEMENT CO,-1894.5913612076702,rent
+2024-09-16,savings,AMC THEATERS,-102.67,entertainment
+2024-09-16,credit_card,PIZZA HUT,-16.74,food
+2024-09-17,checking,FREELANCE PAYMENT,646.28,income
+2024-09-17,credit_card,YOUTUBE PREMIUM,-8.72,subscriptions
+2024-09-17,checking,TRADER JOE'S,-51.97,food
+2024-09-17,checking,IN-N-OUT,-10.91,food
+2024-09-17,credit_card,CONCERT TICKETS,-12.55,entertainment
+2024-09-20,savings,MIDJOURNEY SUBSCRIPTION,-5.31,subscriptions
+2024-09-22,credit_card,FREELANCE PAYMENT,1141.16,income
+2024-09-22,checking,PROPERTY MANAGEMENT CO,-1655.7405794033396,rent
+2024-09-24,savings,SMUD UTILITIES,-67.01,utilities
+2024-09-24,checking,MCDONALD'S,-56.47,food
+2024-09-26,credit_card,TARGET,-190.23,shopping
+2024-09-27,savings,SAFEWAY,-42.06,food
+2024-09-28,savings,UBER,-40.67,transportation
+2024-09-29,savings,PANDA EXPRESS,-12.79,food
+2024-09-30,checking,SPOTIFY,-9.08,subscriptions
+2024-09-30,savings,DIRECT DEPOSIT PAYROLL,2260.25,income
+2024-10-01,savings,PANDA EXPRESS,-20.41,food
+2024-10-02,savings,SMUD UTILITIES,-113.46,utilities
+2024-10-03,checking,DISNEY+,-12.15,subscriptions
+2024-10-04,savings,REFUND AMAZON,1312.84,income
+2024-10-05,savings,DOORDASH,-22.34,food
+2024-10-06,savings,CHIPOTLE,-17.9,food
+2024-10-06,credit_card,REFUND AMAZON,2739.16,income
+2024-10-06,checking,ZELLE PAYMENT,-41.94,other
+2024-10-08,credit_card,T-MOBILE,-75.18,utilities
+2024-10-09,checking,NETFLIX,-14.81,subscriptions
+2024-10-09,checking,APARTMENT RENT,-1856.0906864774747,rent
+2024-10-09,savings,REFUND AMAZON,856.26,income
+2024-10-10,savings,APPLE ICLOUD,-20.88,subscriptions
+2024-10-10,savings,WALMART GROCERY,-20.71,food
+2024-10-11,checking,UBER EATS,-44.79,food
+2024-10-11,savings,COMCAST INTERNET,-109.06,utilities
+2024-10-14,credit_card,LYFT,-56.24,transportation
+2024-10-14,savings,COSTCO FOOD COURT,-44.67,food
+2024-10-14,savings,DIRECT DEPOSIT PAYROLL,1293.74,income
+2024-10-17,checking,CHEVRON,-71.6,transportation
+2024-10-18,savings,APPLE ICLOUD,-12.24,subscriptions
+2024-10-19,credit_card,DISNEY+,-8.7,subscriptions
+2024-10-19,credit_card,PIZZA HUT,-31.52,food
+2024-10-20,credit_card,PAYPAL *EBAY,-65.89,other
+2024-10-20,savings,REFUND AMAZON,1900.92,income
+2024-10-21,credit_card,NIKE FACTORY STORE,-248.28,shopping
+2024-10-23,savings,PG&E,-132.89,utilities
+2024-10-23,savings,DOORDASH,-35.28,food
+2024-10-24,savings,FREELANCE PAYMENT,864.68,income
+2024-10-25,savings,WALMART SUPERSTORE,-69.56,shopping
+2024-10-25,checking,APARTMENT RENT,-1742.978671288077,rent
+2024-10-26,savings,SMUD UTILITIES,-41.95,utilities
+2024-10-26,credit_card,CHIPOTLE,-54.48,food
+2024-10-26,savings,LYFT,-35.43,transportation
+2024-10-27,savings,NETFLIX,-20.63,subscriptions
+2024-10-28,savings,COSTCO FOOD COURT,-6.39,food
+2024-10-28,savings,YOUTUBE PREMIUM,-7.84,subscriptions
+2024-10-29,checking,CHIPOTLE,-7.72,food
+2024-10-30,checking,CITY WATER & SEWER,-106.3,utilities
+2024-10-30,checking,T-MOBILE,-72.23,utilities
+2024-10-31,savings,PROPERTY MANAGEMENT CO,-1861.2652322761762,rent
+2024-10-31,checking,TRADER JOE'S,-42.46,food
+2024-10-31,credit_card,DISNEY+,-9.06,subscriptions
+2024-11-01,credit_card,APPLE ICLOUD,-5.66,subscriptions
+2024-11-01,savings,IN-N-OUT,-34.57,food
+2024-11-01,savings,WALGREENS PHARMACY,-161.67,health
+2024-11-02,savings,AMC THEATERS,-120.49,entertainment
+2024-11-04,savings,CASH APP,-54.0,other
+2024-11-05,savings,STARBUCKS,-49.58,food
+2024-11-05,checking,REFUND AMAZON,3330.98,income
+2024-11-05,checking,STEAM PURCHASE,-132.22,entertainment
+2024-11-06,credit_card,APARTMENT RENT,-1796.4988190247013,rent
+2024-11-06,checking,APPLE STORE,-66.47,shopping
+2024-11-06,savings,CHIPOTLE,-58.08,food
+2024-11-06,savings,HULU,-14.44,subscriptions
+2024-11-07,credit_card,MIDJOURNEY SUBSCRIPTION,-8.41,subscriptions
+2024-11-07,credit_card,24 HOUR FITNESS,-36.68,health
+2024-11-07,checking,CASH APP,-94.85,other
+2024-11-10,savings,BOWLING ALLEY,-74.78,entertainment
+2024-11-10,credit_card,GYM MEMBERSHIP,-67.74,health
+2024-11-10,savings,SHELL GAS,-51.85,transportation
+2024-11-11,checking,APARTMENT RENT,-1790.6075168758164,rent
+2024-11-11,credit_card,UNI QLO,-235.68,shopping
+2024-11-12,savings,VENMO INCOMING,524.51,income
+2024-11-12,savings,TARGET,-70.17,shopping
+2024-11-12,checking,TACO BELL,-25.53,food
+2024-11-13,savings,NIKE FACTORY STORE,-174.27,shopping
+2024-11-14,checking,MIDJOURNEY SUBSCRIPTION,-13.24,subscriptions
+2024-11-16,checking,COSTCO WHOLESALE,-220.01,shopping
+2024-11-19,checking,SAFEWAY,-18.36,food
+2024-11-20,checking,APARTMENT RENT,-1759.3387200075563,rent
+2024-11-20,credit_card,TACO BELL,-20.26,food
+2024-11-20,savings,SHELL GAS,-14.61,transportation
+2024-11-21,credit_card,MIDJOURNEY SUBSCRIPTION,-13.93,subscriptions
+2024-11-21,credit_card,COSTCO WHOLESALE,-228.71,shopping
+2024-11-22,savings,T-MOBILE,-116.58,utilities
+2024-11-23,checking,CASH DEPOSIT,891.95,income
+2024-11-23,savings,VENMO PAYMENT,-13.63,other
+2024-11-23,credit_card,TRADER JOE'S,-7.35,food
+2024-11-23,credit_card,BART CLIPPER,-28.85,transportation
+2024-11-23,savings,DOORDASH,-36.08,food
+2024-11-24,checking,LOWE'S,-243.21,shopping
+2024-11-24,savings,ESCAPE ROOM,-132.38,entertainment
+2024-11-25,checking,IN-N-OUT,-13.72,food
+2024-11-25,credit_card,AT&T INTERNET,-53.57,utilities
+2024-11-26,credit_card,AMAZON MARKETPLACE,-87.6,shopping
+2024-11-28,checking,UNI QLO,-42.42,shopping
+2024-11-29,credit_card,NINTENDO ESHOP,-55.01,entertainment
+2024-12-01,savings,BOWLING ALLEY,-28.05,entertainment
+2024-12-01,credit_card,ZELLE PAYMENT,-36.42,other
+2024-12-01,checking,EXXONMOBIL,-38.97,transportation
+2024-12-02,savings,BART CLIPPER,-13.01,transportation
+2024-12-02,savings,STEAM PURCHASE,-56.67,entertainment
+2024-12-03,savings,WALMART SUPERSTORE,-162.64,shopping
+2024-12-03,credit_card,DISNEY+,-7.88,subscriptions
+2024-12-04,savings,NETFLIX,-7.47,subscriptions
+2024-12-05,checking,DISNEY+,-14.06,subscriptions
+2024-12-05,credit_card,STEAM PURCHASE,-138.34,entertainment
+2024-12-06,checking,UBER,-34.95,transportation
+2024-12-06,checking,PROPERTY MANAGEMENT CO,-1881.391564505836,rent
+2024-12-08,checking,IN-N-OUT,-17.57,food
+2024-12-08,credit_card,DOORDASH,-22.97,food
+2024-12-09,savings,UBER EATS,-26.16,food
+2024-12-10,savings,NIKE FACTORY STORE,-152.37,shopping
+2024-12-10,checking,PROPERTY MANAGEMENT CO,-1780.6562894576266,rent
+2024-12-11,savings,RENT PAYMENT,-1897.3186185909326,rent
+2024-12-12,savings,AT&T INTERNET,-79.67,utilities
+2024-12-12,savings,UNI QLO,-242.31,shopping
+2024-12-12,checking,DOORDASH,-54.18,food
+2024-12-13,credit_card,METRO TRANSIT,-45.94,transportation
+2024-12-13,savings,BOWLING ALLEY,-49.78,entertainment
+2024-12-13,credit_card,AT&T INTERNET,-112.42,utilities
+2024-12-13,checking,PAYPAL *EBAY,-114.57,other
+2024-12-13,checking,APARTMENT RENT,-1843.9237140324715,rent
+2024-12-15,savings,RENT PAYMENT,-1635.3678634614619,rent
+2024-12-16,credit_card,REGAL CINEMAS,-100.44,entertainment
+2024-12-16,savings,CITY WATER & SEWER,-120.55,utilities
+2024-12-17,checking,METRO TRANSIT,-12.83,transportation
+2024-12-17,savings,SPOTIFY,-10.57,subscriptions
+2024-12-17,savings,AMAZON MARKETPLACE,-228.99,shopping
+2024-12-17,checking,APARTMENT RENT,-1736.4221471781264,rent
+2024-12-19,savings,COMCAST INTERNET,-59.15,utilities
+2024-12-19,credit_card,COSTCO FOOD COURT,-44.5,food
+2024-12-20,checking,STEAM PURCHASE,-110.97,entertainment
+2024-12-21,credit_card,UBER,-10.08,transportation
+2024-12-22,savings,HOME DEPOT,-113.49,shopping
+2024-12-23,checking,CHIPOTLE,-24.37,food
+2024-12-25,credit_card,UBER,-74.35,transportation
+2024-12-26,checking,TRADER JOE'S,-8.47,food
+2024-12-27,checking,APPLE ICLOUD,-20.71,subscriptions
+2024-12-28,savings,COMCAST INTERNET,-83.55,utilities
+2024-12-29,credit_card,VENMO INCOMING,2543.52,income
+2024-12-29,savings,FREELANCE PAYMENT,1336.87,income
+2024-12-30,checking,AT&T INTERNET,-84.82,utilities
