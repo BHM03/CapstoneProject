@@ -1,9 +1,3 @@
-Hey, welcome to my project!
+# Personal Finance Analyzer (ML + AI)
 
-My project is a web app that takes in your transaction csv file, categorizes your spending, and forecasts your finances
-
-This is my current working version of my project that only has the ETL pipeline completed, so you'll only need to run the following command:
-  (make sure you are in my etl directory first)
-  python3 ingest.py artificial_transactions_100.csv
-
-The results should be stored in the data -> warehouse directory under the name of transactions.csv (since my results were pushed when I commited, that file will be present in the directory, so you can simply delete that file and run the program again to make sure it works)
+This project is a personal finance analyzer that allows users to upload bank or credit card CSV files, normalize and store transactions, train a machine learning model to automatically categorize spending, and see their finances through an interactive Streamlit dashboard. The system uses an ETL pipeline to standardize raw transaction data, a TF IDF and Logistic Regression classifier to predict categories for uncategorized transactions, and multiple analytics views including spending summaries, category breakdowns, simple forecasts, and subscription detection. An AI assistant page enables users to ask natural language questions about their finances using the currently filtered transaction data. The application is designed to be modular, transparent, and educational, demonstrating practical use of data preprocessing, supervised machine learning, and interactive data visualization in a real world personal finance context.

@@ -1,0 +1,16 @@
+Run the following command:
+
+  pip install streamlit pandas scikit-learn joblib altair
+
+# Generate training data (optional)
+
+python3 make_training_data.py
+
+# Train ML model
+
+python3 train_classifier.py
+
+# Run the Application
+
+python3 -m streamlit run app.py
+
