@@ -1,31 +1,44 @@
-# agent.py
 import json
 import os
+import re
 
 import pandas as pd
 from openai import OpenAI
 
-import re
+# strip <think>...</think> tags
+def strip_think_tags(text: str) -> str:
 
-def strip_think_tags(text: str)-> str:
+    if not isinstance(text, str):
+        text = str(text)
 
-    # remove ANY <think>...</think> block
-    cleaned = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL)
-    return cleaned.strip()
+    lower = text.lower()
+    start = lower.find("<think>")
+    end = lower.find("</think>")
 
-# Hugging Face token from env
+    # only strip if it sees both tags in the right order
+    if start != -1 and end != -1 and end > start:
+        before = text[:start]
+        after = text[end + len("</think>") :]
+        return (before + after).strip()
+
+    # no well formed block found
+    return text.strip()
+
+
+
+# Hugging Face Router config
+
 HF_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
-
-# HF router base URL 
 HF_BASE_URL = "https://router.huggingface.co/v1"
 
 # Chat capable model served via HF Inference provider
 HF_MODEL_ID = "HuggingFaceTB/SmolLM3-3B:hf-inference"
 
 
-def _get_hf_client()-> OpenAI | None:
+def _get_hf_client() -> OpenAI | None:
     
-    # build an OpenAI-compatible client that actually talks to Hugging Face Router
+    # Build an OpenAI compatible client that actually talks to Hugging Face Router.
+    
     if not HF_TOKEN:
         return None
 
@@ -35,41 +48,76 @@ def _get_hf_client()-> OpenAI | None:
     )
     return client
 
-def build_summary_for_llm(df: pd.DataFrame) -> dict:
-    
-    # build a compact summary for the LLM; category totals, recent transactions, date range
-    
+
+# Build FULL dataset payload for the LLM
+def build_full_data_payload(df: pd.DataFrame) -> dict:
+    """
+    Build a JSON serializable representation of the full dataset
+
+    - All transactions
+    - Category totals
+    - Overall date range
+    - Number of transactions
+    """
     if df.empty:
-        return {"categories": {}, "recent": [], "date_range": None}
+        return {
+            "n_transactions": 0,
+            "transactions": [],
+            "categories": {},
+            "date_range": None,
+        }
 
     df = df.copy()
-    df["date"] = pd.to_datetime(df["date"])
 
-    totals = df.groupby("category")["amount"].sum().to_dict()
+    # ensure date is a string in YYYY-MM-DD format
+    if "date" in df.columns:
+        df["date"] = pd.to_datetime(df["date"], errors="coerce")
+        df["date"] = df["date"].dt.strftime("%Y-%m-%d")
 
-    recent = (
-        df.sort_values("date", ascending=False)
-          .head(20)
-          .loc[:, ["date", "merchant_raw", "amount", "category"]]
-          .assign(date=lambda x: x["date"].dt.strftime("%Y-%m-%d"))
-          .to_dict(orient="records")
-    )
+    # Ensure category exists
+    if "category" not in df.columns:
+        df["category"] = "unknown"
 
-    summary = {
+    # Try to ensure amount is float for nicer output
+    if "amount" in df.columns:
+        df["amount"] = pd.to_numeric(df["amount"], errors="coerce")
+
+    # Compute category totals
+    if "amount" in df.columns:
+        totals = df.groupby("category")["amount"].sum().to_dict()
+    else:
+        totals = {}
+
+    # Build date range
+    date_range = None
+    if "date" in df.columns:
+        # some rows might have NaT/ NaT if parsing failed
+        dates = pd.to_datetime(df["date"], errors="coerce")
+        if dates.notna().any():
+            start = dates.min().date().isoformat()
+            end = dates.max().date().isoformat()
+            date_range = {"start": start, "end": end}
+
+    # Convert entire DataFrame to records for the model
+    transactions = df.to_dict(orient="records")
+
+    payload = {
+        "n_transactions": len(df),
+        "transactions": transactions,
         "categories": totals,
-        "recent": recent,
-        "date_range": {
-            "start": str(df["date"].min().date()),
-            "end": str(df["date"].max().date()),
-        },
+        "date_range": date_range,
     }
-    return summary
+    return payload
 
 
+# answer_question_llm
 def answer_question_llm(df: pd.DataFrame, question: str) -> str:
     """
-    Use Hugging Face Router to answer a question
-    about the user's finances based on categorized transactions
+    Use Hugging Face Router to answer a question about the user's finances
+    based on the full transaction dataset
+
+    The entire filtered DataFrame `df` is serialized and sent to the model
+    as JSON, along with some helpful aggregates
     """
     if df.empty:
         return "I don't have any transactions yet, so I can't analyze your finances."
@@ -81,19 +129,24 @@ def answer_question_llm(df: pd.DataFrame, question: str) -> str:
             "Set the HUGGINGFACEHUB_API_TOKEN environment variable to your Hugging Face token."
         )
 
-    summary = build_summary_for_llm(df)
+    data_payload = build_full_data_payload(df)
 
     system_prompt = (
         "You are a careful, honest personal finance assistant. "
-        "Use ONLY the provided spending summary to answer questions. "
+        "You are given the user's FULL transaction dataset as JSON. "
+        "Each transaction includes fields like date, merchant_raw, amount, category, "
+        "and account_id (when available). "
+        "Use ONLY this data to answer questions. "
+        "Treat negative amounts as expenses and positive amounts as income. "
         "Be concise and specific. When giving dollar amounts, round to 2 decimals. "
-        "If you are unsure, say so honestly."
+        "If you are unsure or the data does not contain enough information, "
+        "say so honestly."
     )
 
     user_prompt = f"""
-Here is the user's financial summary (JSON):
+Here is the user's full transaction dataset (JSON):
 
-{json.dumps(summary, indent=2, default=str)}
+{json.dumps(data_payload, indent=2, default=str)}
 
 User question:
 {question}
@@ -101,27 +154,30 @@ User question:
 
     messages = [
         {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt},
+        {"role": "user",  "content": user_prompt},
     ]
 
     try:
         completion = client.chat.completions.create(
-            model=HF_MODEL_ID,
-            messages=messages,
-            max_tokens=256,
-            temperature=0.3,
+        model=HF_MODEL_ID,
+        messages=messages,
+        max_tokens=768, 
+        temperature=0.3,
         )
-        content = completion.choices[0].message.content
 
-        # convert to str
+        choice = completion.choices[0]
+        content = choice.message.content
+
+        # see if the model hit the length limit
+        print("HF finish_reason:", getattr(choice, "finish_reason", None))
+
         if not isinstance(content, str):
             content = str(content)
 
-        # strip <think> tags
         content = strip_think_tags(content)
-
         return content.strip()
+
     except Exception as e:
-        # print detailed error to terminal for debugging
+        # Print detailed error to your terminal for debugging
         print("HF Router / OpenAI-compatible error in answer_question_llm:", repr(e))
         return f"The external AI assistant is unavailable right now: {type(e).__name__}: {e}"
