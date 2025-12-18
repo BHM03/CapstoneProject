@@ -105,3 +105,4 @@ date,merchant_raw,amount,currency,account_id,source_file,category
 2025-03-29,DOORDASH,-19.4,USD,default,sample.csv,
 2025-03-30,TRADER JOE'S,-32.77,USD,default,sample.csv,
 2025-03-31,COMCAST INTERNET,-69.99,USD,default,sample.csv,
+2025-04-01,ARBYS,-50.0,USD,default,sample.csv,

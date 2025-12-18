@@ -460,7 +460,7 @@ def main():
             else:
                 st.info("Not enough data to compute forecast.")
 
-            st.markdown("### Per-category rolling mean forecast (from ML app)")
+            st.markdown("### Per-category forecast")
             monthly_cat = compute_monthly_totals(df_filtered)
             forecast_df = compute_forecast(monthly_cat)
             if forecast_df.empty:
@@ -502,7 +502,7 @@ def main():
         unknown_df = df_filtered[df_filtered["category"].str.lower().eq("unknown")].copy()
 
         if unknown_df.empty:
-            st.write("No 'unknown' transactions right now 🎉")
+            st.write("No 'unknown' transactions right now")
         else:
             st.write(f"{len(unknown_df)} transactions are still 'unknown' (may need manual review).")
             st.dataframe(

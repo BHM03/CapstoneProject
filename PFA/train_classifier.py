@@ -27,7 +27,7 @@ def main():
     ap = argparse.ArgumentParser(
         description="Train and evaluate spending category classifier."
     )
-    # CHANGED: default dir is now data/training instead of data/processed
+    # default dir is now data/training instead of data/processed
     ap.add_argument(
         "--processed-dir",
         default="data/training",
