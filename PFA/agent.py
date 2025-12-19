@@ -112,13 +112,7 @@ def build_full_data_payload(df: pd.DataFrame) -> dict:
 
 # answer_question_llm
 def answer_question_llm(df: pd.DataFrame, question: str) -> str:
-    """
-    Use Hugging Face Router to answer a question about the user's finances
-    based on the full transaction dataset
 
-    The entire filtered DataFrame `df` is serialized and sent to the model
-    as JSON, along with some helpful aggregates
-    """
     if df.empty:
         return "I don't have any transactions yet, so I can't analyze your finances."
 

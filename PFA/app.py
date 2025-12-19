@@ -112,7 +112,7 @@ def compute_monthly_totals(df: pd.DataFrame) -> pd.DataFrame:
 
 def compute_forecast(monthly: pd.DataFrame, window: int = 3) -> pd.DataFrame:
     
-    # Simple per-category forecast: next month = mean of last N months
+    # Simple per-category forecast. next month = mean of last N months
     if monthly.empty:
         return pd.DataFrame()
 
@@ -135,7 +135,7 @@ def compute_forecast(monthly: pd.DataFrame, window: int = 3) -> pd.DataFrame:
 
 def detect_subscriptions(df: pd.DataFrame, min_months: int = 3) -> pd.DataFrame:
     
-    #Heuristic: merchants that appear in >= min_months distinct months are likely subscriptions
+    #merchants that appear in >= min_months distinct months are likely subscriptions
     if df.empty:
         return pd.DataFrame()
 
@@ -169,8 +169,7 @@ def monthly_spend(df: pd.DataFrame) -> pd.DataFrame:
 
 def simple_forecast_next_month(monthly_df: pd.DataFrame) -> Optional[float]:
     
-    # Very naive forecast: mean of last 3 months (in dollars)
-    
+    # Very lightweight forecast (mean of last 3 months)
     if monthly_df.empty:
         return None
     last_n = monthly_df.tail(3)["amount"]
